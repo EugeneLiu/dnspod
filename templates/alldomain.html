@@ -1,0 +1,31 @@
+$def with (domainList,msg='',delMsg='')
+<div class="container">
+    <div class="button_see">
+        <!--按钮div -->
+        <div class="">
+            <ul>
+                <li><a class="active" href="/domain">全部域名</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="domaindiv">
+        <div class="btn-toolbar">
+            <form method="post" action="/domain">
+                 <p style="margin-top:20px; font-size:120%;">添加域名：<span>$msg</span></p>
+                <input class="input" type="text" name="adddomain" style="width:160px;">
+                <input class="add" type="submit" name="add" value="添加">
+            </form>
+        </div>
+        <div>
+            <div class="titledomain"><p>全部域名（共$len(domainList)）$status&nbsp;&nbsp;&nbsp;<span>$delMsg</span></p></div>
+            $for i in domainList:
+                
+                <div class="item">
+                    <span class="view">$i</span>
+                    <div class="btnitem"><a href="/deldomain/$i" >删除域名</a></div>
+                    <div class="btnitem"><a href="/viewdomain/$i">查看记录</a></div>
+                    <br>
+                </div>
+        </div>
+    </div>
+</div>

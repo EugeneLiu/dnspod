@@ -1,0 +1,301 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+	border-top: 1px,solid,
+
+}
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,cite,code,del,dfn,em,img,q,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,button,table,caption,tbody,tfoot,thead,tr,th,td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 1;
+  font-family: inherit;
+}
+
+
+
+a{
+	text-decoration: none;
+	color: green;
+}
+
+a:hover{
+	color: red;
+}
+div p{
+	line-height: 25px;
+}
+
+span {
+	color: red;
+}
+ol,ul{
+	list-style: none;
+}
+
+li a{
+	display: block;
+	padding-left: 8px;
+	height: 35px;
+	line-height: 25px;
+	font-size:18px;
+	color: #1a6cc1;
+	text-decoration: none;
+}
+
+button,{
+	width:110px;
+	height: 30px;
+	background-color: green;
+	color:white;
+}
+.add{
+	width:80px;
+	height: 38px;
+	background-color: green;
+	color:white;
+	font-size: 100%;
+}
+
+.topbar{
+    height:46px;
+    background:#1c86d1;
+    margin-bottom:10px;
+    }
+
+.container{
+	width:940px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav_string {
+  float:left;
+  margin-top:15px;
+  margin-left:-45px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav_signout{
+  float:right;
+  margin-top:15px;
+  margin-left:-45px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav_signout a{
+	color: white;
+}
+
+.page{
+	overflow: auto;
+	height:500px;
+	margin-bottom: 10px;
+}
+
+.content-login{
+	width: 100%;
+	height: 100%;
+	margin-top: 40px;
+}
+
+.content{
+	float: left;
+	width: 340px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 100%;
+	border-right: 1px dashed #ddd;
+	word-spacing: 10px;
+}
+
+.login,.domaindiv,.recorddiv{
+	float: left;
+	width:400px;
+	height: 100%;
+	margin-left: 40px;margin-left:
+}
+
+.h_title{
+	margin: 10px 10px 30px 0px;
+	font-size: 120%;
+}
+
+.input{
+	margin:10px 10px 10px 0px;
+	height: 12px;
+	width:100%;
+}
+
+.input,.btn_submit,.add{
+	
+	padding:10px;
+	border-radius:5px;
+	border:1px solid #D4D4D4;
+	box-shadow:inset 0 2px 5px #eee;
+}
+
+.btn_submit{
+	background: url('../static/login-button.png') no-repeat 0px 0px;
+	width:100px;
+	height: 43px;
+	margin-top: 10px;
+	display: block;
+}
+
+.button_see{
+	float: left;
+	width: 150px;
+	margin-left: 40px;
+	margin-right:0px;
+	margin-top: 20px;
+	height: 100%;
+	border-right: 1px solid #ddd;
+	word-spacing: 10px;
+}
+
+.titledomain,.title_top{
+	height: 50px;
+
+	margin-top: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.domaindiv,.recorddiv{
+	width: 600px;
+}
+.btn-toolbar{
+	width: 100%;
+	height: 90px;
+
+}
+.btn{
+	margin-top: 20px;
+	float: left;
+	border: 1px solid #ddd;
+	margin-right: 10px;
+}
+
+.item{
+	border-bottom: 1px dashed #bebebe;
+	margin-top: 10px;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.btndiv{
+	float: right;
+}
+.btnitem{
+	float:right;
+	color:#1a6cc1;
+	font-size: 20px;
+}
+.viewdomain{
+	margin-top: 20px;
+	height: 50px;
+	width:100%;
+	font-size:120%;
+	border-bottom: 1px solid #bebebe;
+}
+
+.addrecord{
+	height: 30px;
+	width:100%;
+	margin-top: 20px;
+	overflow: auto;
+}
+.btn_a{
+	float: right;
+	background-color: #bebebe;
+	color: block;
+}
+
+.allRecord{
+	margin-top: 20px;
+	overflow: auto;
+}
+
+.title_top,.updateheader{
+	height: 40px;
+	font-size: 120%;
+	margin-top: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.upload{
+	width: 50%;
+	height: 100%;
+	float: right;
+	
+}
+
+.autoload{
+	width: 49%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #ddd;
+}
+
+.updatecontent{
+	width:100%;
+	height: 100%;
+}
+
+.infoleft{
+	width:20%;
+	height:100%;
+	float: left;
+	font-size: 120%;
+	border-right: 1px solid #ddd;
+}
+
+.updateform{
+	width: 80%;
+	height: 100%;
+	font-size: 120%;
+	margin-top: 20px;
+	margin-left: 250px;
+	text-align: left;
+}
+
+div a button{
+	width: 80px;
+	padding-bottom: 10px;
+	height: 20px;
+	margin-left: 10px;
+}
+div a{
+
+	color: #1a6cc1;
+	text-decoration: none;
+}
+
+span.view{
+	color:green
+}
+
+footer {
+	border-top:1px solid #e7e8e9;
+	padding:20px;
+
+}
+
+ footer p{
+ 	font-size:12px;
+ 	color:#999999;
+ 	text-align:center;
+ }
+
+ footer p a{
+ 	color: #999999;
+ }

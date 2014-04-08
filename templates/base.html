@@ -1,0 +1,32 @@
+$def with (page)
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DNSPod 第三方web客户端</title>
+    <link rel="stylesheet" href="../static/base.css">
+</head>
+<body>
+    <nav class="topbar">
+        <div class="topbar-inner">
+            <div class="container">
+                <h1 class="nav_string">DNSPod第三方web客户端</h1>
+                $if cookie().get('email'):
+                    <h1 class="nav_signout"><a href="/signout">退出</a></h1>
+            </div>
+        </div>
+    </nav>
+    <div class="page">
+        $:page
+    </div>
+    <footer>
+        <div class="container">
+        <p>
+            <a href="#" target="_blank">关于作者</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.dnspod.cn/" target="_blank">DNSPod官方网站</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://support.dnspod.cn/Support/api" target="_blank">DNSPod官方API</a>
+        </p>
+        </div>
+    </footer>
+</body>
+<html>

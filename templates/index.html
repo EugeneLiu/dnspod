@@ -1,0 +1,27 @@
+$def with(signin_form,msg)
+<div class="container">
+           <div class="content-login">
+                <div class="content">
+                    <h1 class="h_title">使用说明：</h1>
+                    <p>DNSPod第三方web客户端只提供：<br>
+                    个人域名的增、删、改、查和记录的导入、导出<br>
+                    登录后即可以使用</p>
+                    <br><br><br><br>
+                    <p>没有帐号?<a href="https://www.dnspod.cn/SignUp" target="_blank">立即注册</a></p>
+                </div>
+                <div class="login">
+                    <h1 class="h_title">登录：</h1>
+                    <span>$msg</span>
+                    <form action="/" method="post">
+			<!--                        
+			<label>邮箱</label><br>
+                        <input type="text" name="email" class="input"><br>
+                        <label>密码</label><br>
+                        <input type="password" name="password" class="input"><br>
+                        <input type="submit" name="login" value="登录" class="btn_submit"><br>
+			-->
+			$:signin_form.render()
+                    </form>
+                </div>
+           </div> 
+        </div>

@@ -1,0 +1,3 @@
+$def with(str)
+	
+<a href="../static/$str.txt">download</a>

@@ -1,0 +1,93 @@
+$def with(str,list,delMsg='')
+<div class="container">
+    <div class="button_see">
+        <!--按钮div -->
+        <div class="">
+            <ul>
+                <li><a class="active" href="/domain">全部域名</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="recorddiv">
+        <div class="viewdomain">
+            <!-- 显示域名-->
+            $str域名的记录
+            <form style="float:right;">
+                <a href="/download/$str"><input type="button" value="导出" ></a>
+                <a href="/upload/$str"><input type="button" value="导入"></a>
+            </form>
+        </div>
+        <div class="addrecord">
+            <div style="float:left;">添加记录</div><span>$delMsg</span>
+        </div>
+        <div>
+            <!--添加记录要用到的表单-->
+            <form action="/addrecord/$str" method="post">
+                <table>
+                    <tr>
+                        <th>主机记录</th>
+                        <th>记录类型</th>
+                        <th>线路类型</th>
+                        <th>记录值</th>
+                        <th>MX优先级</th>
+                        <th>TTL</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="hostrecord" style="width:120px"></td>
+                        <td>
+                            <select name="recordType" style="width:75px">
+                                <option value="A" selected="selected">A</option>
+                                <option value="CNAME">CNAME</option>
+                                <option value="MX">MX</option>
+                                <option value="TXT">TXT</option>
+                                <option value="NS">NS</option>
+                                <option value="AAAA">AAAA</option>
+                                <option value="SRV">SRV</option>
+                                <option value="显性URL">显性URL</option>
+                                <option value="隐性URL">隐性URL</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="routeType" style="width:75px">
+                                <option value="默认" selected="selected">默认</option>
+                                <option value="电信">电信</option>
+                                <option value="联通">联通</option>
+                                <option value="教育网">教育网</option>
+                                <option value="百度">百度</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" name="recordValue" style="width:120px">
+                        </td>
+                        <td width="70px;">
+                            <input type="text" name="MX" style="width:75px">
+                        </td>
+                        <td>
+                            <input type="text" name="TTL" style="width:50px">
+                        </td>
+                        <td>
+                            <input type="submit" name="save" value="保存" style="width:50px">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="allRecord">
+            <!--显示所有记录-->
+            <table style="text-align:center;" frame=below>
+            $for i in list:
+                <tr>
+                    <td width="140px;">$i['name']</td>
+                    <td width="70px;">$i['type']</td>
+                    <td width="70px;">$i['line']</td>
+                    <td width="120px;">$i['value']</td>
+                    <td width="75px;">$i['mx']</td>
+                    <td width="50px;">$i['ttl']</td>
+                    <td><a href="/delrecord/$str-$i['id']"><input type="button" value="删除"></a></td>
+                    <td><a href="/updaterecord/$str-$i['id']"><input type="button" value="修改"></a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
