@@ -6,7 +6,7 @@ DNSPod第三方python web客户端<br>
 使用时取保安装了python2.7 和 web.py， dnspod.py是主文件，执行python dnspod.py即可进入主界面.<br>
 界面对浏览器的兼容做的不好，最好用chrome打开测试。<br>
 <br>
-4月8号更新。
+4月8号更新
 =
 进一步完善了域名和记录的增删改查功能，同时添加了域名记录的导入、导出功能。<br>
 导入功能介绍：<br>
